@@ -1,0 +1,6 @@
+ecc小指数漏洞，指数q知道时可以恢复出 invert(x*k, q)
+
+kp = x*k*g
+invert(x*k, q)*kp = g
+
+PS: 只要q可以在有限时间内遍历完就行，不需要5这么小
