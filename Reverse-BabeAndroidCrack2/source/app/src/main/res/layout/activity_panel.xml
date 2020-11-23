@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/bj" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/back" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="50dp" android:layout_marginRight="50dp">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="20dp" android:layout_marginBottom="30dp">
+                <TextView android:textSize="28sp" android:textStyle="bold" android:textColor="#004dfc" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="鸭腿"/>
+                <TextView android:textColor="#f90bf1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="想爽别嫌废号，想稳别被举报"/>
+                <TextView android:textColor="#ff000000" android:gravity="center" android:id="@+id/send_button" android:background="@drawable/open" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="15dp" android:layout_marginRight="30dp" android:layout_marginBottom="10dp" android:text="GetFlag" android:onClick="onGetFlag"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
