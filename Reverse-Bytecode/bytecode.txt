@@ -1,0 +1,209 @@
+Disassembly of main:
+  5           0 LOAD_GLOBAL              0 (input)
+              2 LOAD_CONST               1 ('No Flag No Entry <(_^_)>:\n')
+              4 CALL_FUNCTION            1
+              6 STORE_FAST               0 (flag)
+
+  6           8 LOAD_GLOBAL              1 (len)
+             10 LOAD_FAST                0 (flag)
+             12 CALL_FUNCTION            1
+             14 LOAD_CONST               2 (34)
+             16 COMPARE_OP               2 (==)
+             18 POP_JUMP_IF_FALSE       46
+             20 LOAD_GLOBAL              2 (foo1)
+             22 LOAD_GLOBAL              3 (foo2)
+             24 LOAD_GLOBAL              4 (foo3)
+             26 LOAD_FAST                0 (flag)
+             28 CALL_FUNCTION            1
+             30 CALL_FUNCTION            1
+             32 CALL_FUNCTION            1
+             34 POP_JUMP_IF_FALSE       46
+
+  7          36 LOAD_GLOBAL              5 (print)
+             38 LOAD_CONST               3 ('\nAcc3pTed: You g0t iT! :D')
+             40 CALL_FUNCTION            1
+             42 POP_TOP
+             44 JUMP_FORWARD             8 (to 54)
+
+  9     >>   46 LOAD_GLOBAL              5 (print)
+             48 LOAD_CONST               4 ('\nErr0r: Unm4tched str1ng. :/')
+             50 CALL_FUNCTION            1
+             52 POP_TOP
+        >>   54 LOAD_CONST               0 (None)
+             56 RETURN_VALUE
+
+
+
+Disassembly of foo1:
+ 12           0 LOAD_CONST               1 (51)
+              2 LOAD_CONST               2 (42)
+              4 LOAD_CONST               3 (67)
+              6 LOAD_CONST               4 (2)
+              8 LOAD_CONST               5 (100)
+             10 LOAD_CONST               6 (48)
+             12 LOAD_CONST               7 (94)
+             14 LOAD_CONST               8 (29)
+             16 LOAD_CONST               9 (25)
+             18 LOAD_CONST              10 (26)
+             20 LOAD_CONST              11 (9)
+             22 LOAD_CONST              12 (43)
+             24 LOAD_CONST               9 (25)
+             26 LOAD_CONST              13 (21)
+             28 LOAD_CONST              14 (53)
+             30 LOAD_CONST              15 (11)
+             32 LOAD_CONST              15 (11)
+             34 LOAD_CONST              16 (91)
+             36 LOAD_CONST              17 (0)
+             38 LOAD_CONST              18 (12)
+             40 LOAD_CONST              19 (14)
+             42 LOAD_CONST              20 (19)
+             44 LOAD_CONST              21 (122)
+             46 LOAD_CONST              17 (0)
+             48 LOAD_CONST              22 (44)
+             50 LOAD_CONST              10 (26)
+             52 LOAD_CONST              23 (58)
+             54 LOAD_CONST              10 (26)
+             56 LOAD_CONST              24 (28)
+             58 LOAD_CONST              25 (24)
+             60 LOAD_CONST              26 (50)
+             62 LOAD_CONST              27 (3)
+             64 LOAD_CONST              28 (93)
+             66 LOAD_CONST              13 (21)
+             68 BUILD_LIST              34
+             70 STORE_FAST               1 (arr)
+
+ 13          72 LOAD_FAST                0 (s)
+             74 LOAD_FAST                1 (arr)
+             76 COMPARE_OP               2 (==)
+             78 POP_JUMP_IF_FALSE       84
+
+ 14          80 LOAD_CONST              29 (True)
+             82 RETURN_VALUE
+
+ 16     >>   84 LOAD_CONST              30 (False)
+             86 RETURN_VALUE
+             88 LOAD_CONST               0 (None)
+             90 RETURN_VALUE
+
+
+
+Disassembly of foo2:
+ 19           0 LOAD_GLOBAL              0 (list)
+              2 LOAD_GLOBAL              1 (map)
+              4 LOAD_GLOBAL              2 (ord)
+              6 LOAD_FAST                0 (s)
+              8 CALL_FUNCTION            2
+             10 CALL_FUNCTION            1
+             12 LOAD_CONST               0 (None)
+             14 LOAD_CONST               0 (None)
+             16 LOAD_CONST              13 (-1)
+             18 BUILD_SLICE              3
+             20 BINARY_SUBSCR
+             22 STORE_FAST               1 (arr1)
+
+ 20          24 LOAD_CONST               2 (74)
+             26 LOAD_CONST               3 (117)
+             28 LOAD_CONST               4 (115)
+             30 LOAD_CONST               5 (116)
+             32 LOAD_CONST               6 (84)
+             34 LOAD_CONST               7 (111)
+             36 LOAD_CONST               7 (111)
+             38 LOAD_CONST               8 (108)
+             40 LOAD_CONST               9 (109)
+             42 LOAD_CONST              10 (97)
+             44 LOAD_CONST              11 (110)
+             46 BUILD_LIST              11
+             48 STORE_FAST               2 (arr2)
+
+ 21          50 SETUP_LOOP              44 (to 96)
+             52 LOAD_GLOBAL              3 (range)
+             54 LOAD_GLOBAL              4 (len)
+             56 LOAD_FAST                1 (arr1)
+             58 CALL_FUNCTION            1
+             60 CALL_FUNCTION            1
+             62 GET_ITER
+        >>   64 FOR_ITER                28 (to 94)
+             66 STORE_FAST               3 (i)
+
+ 22          68 LOAD_FAST                1 (arr1)
+             70 LOAD_FAST                3 (i)
+             72 DUP_TOP_TWO
+             74 BINARY_SUBSCR
+             76 LOAD_FAST                2 (arr2)
+             78 LOAD_FAST                3 (i)
+             80 LOAD_CONST              12 (11)
+             82 BINARY_MODULO
+             84 BINARY_SUBSCR
+             86 INPLACE_XOR
+             88 ROT_THREE
+             90 STORE_SUBSCR
+             92 JUMP_ABSOLUTE           64
+        >>   94 POP_BLOCK
+
+ 23     >>   96 LOAD_FAST                1 (arr1)
+             98 RETURN_VALUE
+
+
+
+Disassembly of foo3:
+ 26           0 LOAD_CONST               1 (1)
+              2 STORE_FAST               1 (a)
+
+ 27           4 LOAD_CONST               7 (-6)
+              6 STORE_FAST               2 (b)
+
+ 28           8 LOAD_GLOBAL              0 (len)
+             10 LOAD_FAST                0 (s)
+             12 CALL_FUNCTION            1
+             14 LOAD_CONST               3 (33)
+             16 BINARY_SUBTRACT
+             18 STORE_FAST               3 (c)
+
+ 29          20 LOAD_FAST                1 (a)
+             22 LOAD_CONST               4 (2)
+             24 LOAD_FAST                3 (c)
+             26 BINARY_MULTIPLY
+             28 BINARY_ADD
+             30 LOAD_CONST               5 (3)
+             32 BINARY_MULTIPLY
+             34 LOAD_CONST               6 (4)
+             36 LOAD_FAST                3 (c)
+             38 BINARY_MULTIPLY
+             40 BINARY_ADD
+             42 STORE_FAST               1 (a)
+
+ 30          44 LOAD_FAST                2 (b)
+             46 LOAD_CONST               4 (2)
+             48 LOAD_FAST                1 (a)
+             50 BINARY_MULTIPLY
+             52 BINARY_ADD
+             54 LOAD_CONST               6 (4)
+             56 LOAD_FAST                3 (c)
+             58 BINARY_MULTIPLY
+             60 BINARY_ADD
+             62 LOAD_FAST                3 (c)
+             64 BINARY_ADD
+             66 STORE_FAST               2 (b)
+
+ 31          68 LOAD_FAST                0 (s)
+             70 LOAD_FAST                2 (b)
+             72 LOAD_FAST                1 (a)
+             74 LOAD_CONST               8 (-1)
+             76 BUILD_SLICE              3
+             78 BINARY_SUBSCR
+             80 LOAD_FAST                0 (s)
+             82 LOAD_CONST               0 (None)
+             84 LOAD_FAST                2 (b)
+             86 LOAD_CONST               9 (-1)
+             88 BUILD_SLICE              3
+             90 BINARY_SUBSCR
+             92 BINARY_ADD
+             94 LOAD_FAST                0 (s)
+             96 LOAD_CONST               0 (None)
+             98 LOAD_FAST                1 (a)
+            100 LOAD_CONST               1 (1)
+            102 BINARY_ADD
+            104 BUILD_SLICE              2
+            106 BINARY_SUBSCR
+            108 BINARY_ADD
+            110 RETURN_VALUE
