@@ -1,0 +1,6 @@
+.idea
+.DS_Store
+.gdb_history
+*.tmp
+*.swp
+tags
