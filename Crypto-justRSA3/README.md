@@ -10,7 +10,8 @@ hints：
 flag：HSCTF{Aba_Aba_Aba_Aba_Aba}
 
 ---
-
+![0](./src/0.png)
+<!--
 令：
 $$
 p^e \equiv x\ (mod\ n)
@@ -35,3 +36,4 @@ $$
 $$
 gcd(x, n) =gcd(kp, pq)=p
 $$
+-->

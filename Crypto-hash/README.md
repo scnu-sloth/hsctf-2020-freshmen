@@ -8,16 +8,15 @@ PS：这个是小神师兄出的题（逃
 
 ---
 
+![0](./src/0.png)
+
+<!--
 这个是某个叫小神的师兄出的题目，我只是负责写wp的（逃
-
-
 
 首先根据hashFunction的调用可以得到：
 $$
 g^{msg1}*pk*{rand1} \equiv ^{msg2}*pk*{rand2} (mod\ p)
 $$
-
-
 
 
 然后从DSA的条件（可以ctf wiki看一看）可以知道：
@@ -45,3 +44,4 @@ $$
 sk \equiv (msg2-msg1)*(rand1-rand2)^{-1}\ (mod\ q)
 $$
 解出sk然后直接套AES解密就好了。
+-->
