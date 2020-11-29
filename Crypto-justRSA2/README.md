@@ -6,3 +6,7 @@
 描述：你会CRT吗？
 hints：（无）
 flag：HSCTF{00Oops!U_kn0_CRT}
+
+---
+
+RSA的快速解密，Google关键词“RSA快速解密 crt dp dq”（懒）
